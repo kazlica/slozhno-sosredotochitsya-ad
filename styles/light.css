@@ -9,6 +9,7 @@
   --color-accent: #ff8dcb;
   --color-text: #353430;
   --color-title: #ffc2e6;
+  --color-topic-title: var(--color-text);
   --color-text-shadow: var(--color-accent);
   --color-dec-border: var(--color-text);
 

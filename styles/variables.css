@@ -3,13 +3,14 @@
   --color-accent: #ff0070;
   --color-text: #f1b2ce;
   --color-title: #db00ff;
+  --color-topic-title: var(--color-title);
   --color-text-shadow: var(--color-accent);
   --color-btn-outline: var(--color-accent);
   --color-dec-border: var(--color-accent);
 
   --lh-title: 1.3;
   --padding: 10px;
-  --dec-size: 35px;
+  --dec-size: 25px;
   --topics-mb: 50px;
   --blocks-margin: 40px;
 
