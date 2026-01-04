@@ -47,7 +47,6 @@
 
   .jumbotron {
     position: relative;
-    transform: translateX(-20px);
     align-self: center;
     justify-self: start;
   }
@@ -100,7 +99,6 @@
 
   &:nth-child(2) .topic-title {
     margin-block-end: 20px;
-    max-width: 15ch;
   }
 }
 
@@ -233,6 +231,10 @@
   .images-title {
     margin-block-end: 20px;
   }
+
+  .topic:nth-child(2) .topic-title {
+    max-width: 15ch;
+  }
 }
 
 @media (width >= 1024px) {
@@ -253,6 +255,10 @@
     .header__theme-menu-list {
       grid-auto-flow: column;
     }
+
+    .jumbotron {
+      transform: translateX(-20px);
+    }
   }
 
   .topic:nth-child(2) {
@@ -260,7 +266,8 @@
       max-width: 30ch;
     }
     .tips-list {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
     }
   }
 }

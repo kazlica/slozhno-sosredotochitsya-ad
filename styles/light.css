@@ -47,10 +47,13 @@
     --color-accent: #ff8dcb;
     --color-text: #353430;
     --color-title: #ffc2e6;
+    --color-topic-title: var(--color-text);
     --color-text-shadow: var(--color-accent);
+    --color-dec-border: var(--color-text);
 
     --bg-header: url("../images/cover-image-light.png");
   }
+
   .rec-dec {
     display: none;
   }
@@ -73,10 +76,6 @@
 
     .title {
       color: var(--color-title);
-    }
-
-    .rec-dec {
-      display: none;
     }
   }
 }
