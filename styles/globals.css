@@ -4,39 +4,43 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: currentColor;
+  font: inherit;
 }
 
 body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
-  margin: 0 auto;
+  margin-inline: auto;
+  font-family: "IBM Plex mono", monospace;
+  font-weight: 400;
+  font-size: 18px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
+header,
+footer {
+  min-height: 100vh;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+img {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
 }
 
-picture {
-  margin: 0;
-  padding: 0;
+button {
+  all: unset;
+  cursor: pointer;
+  line-height: 1;
+  padding-inline: 13px;
+  padding-block: 7px;
 }
 
-button,
 a {
-  color: currentColor;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+  all: unset;
 }

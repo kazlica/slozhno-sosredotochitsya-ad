@@ -5,12 +5,77 @@
 */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --color-bg: #fff1f7;
+  --color-accent: #ff8dcb;
+  --color-text: #353430;
+  --color-title: #ffc2e6;
+  --color-text-shadow: var(--color-accent);
+  --color-dec-border: var(--color-text);
+
+  --bg-header: url("../images/cover-image-light.png");
 }
 
 .theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+  color: var(--color-text);
+  background-color: var(--color-bg);
+
+  .header__theme-menu-button {
+    color: var(--color-text);
+  }
+
+  .header__theme-menu-button_active {
+    border-color: var(--color-text);
+  }
+
+  .highlighted {
+    color: var(--color-text);
+  }
+
+  .title {
+    color: var(--color-title);
+  }
+
+  .rec-dec {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg: #fff1f7;
+    --color-accent: #ff8dcb;
+    --color-text: #353430;
+    --color-title: #ffc2e6;
+    --color-text-shadow: var(--color-accent);
+
+    --bg-header: url("../images/cover-image-light.png");
+  }
+  .rec-dec {
+    display: none;
+  }
+
+  .page {
+    color: var(--color-text);
+    background-color: var(--color-bg);
+
+    .header__theme-menu-button {
+      color: var(--color-text);
+    }
+
+    .header__theme-menu-button_active {
+      border-color: var(--color-text);
+    }
+
+    .highlighted {
+      color: var(--color-text);
+    }
+
+    .title {
+      color: var(--color-title);
+    }
+
+    .rec-dec {
+      display: none;
+    }
+  }
 }
