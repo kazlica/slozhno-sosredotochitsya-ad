@@ -24,18 +24,3 @@
   color: var(--color-text);
   background-color: var(--color-bg);
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: #000028;
-    --color-accent: #ff0070;
-    --color-text: #f1b2ce;
-    --color-title: #db00ff;
-    --color-text-shadow: var(--color-accent);
-    --color-btn-outline: var(--color-accent);
-  }
-
-  .rec-dec {
-    display: block !important;
-  }
-} */

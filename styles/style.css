@@ -195,6 +195,12 @@
 }
 
 @media (width >= 768px) {
+  .header {
+    .jumbotron {
+      transform: translateX(-20px);
+    }
+  }
+
   .topic {
     grid-template-columns: 1fr 2fr;
   }
@@ -237,6 +243,19 @@
   }
 }
 
+@media (width >= 768px) and (width < 1024px) {
+  :root {
+    --blocks-margin: 60px;
+  }
+  .header {
+    .header-title {
+      transform: translateY(48px) translateX(-40px);
+      box-shadow: 40px 0 var(--color-accent);
+      max-width: 30ch;
+    }
+  }
+}
+
 @media (width >= 1024px) {
   .jumbotron {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -254,10 +273,6 @@
 
     .header__theme-menu-list {
       grid-auto-flow: column;
-    }
-
-    .jumbotron {
-      transform: translateX(-20px);
     }
   }
 
